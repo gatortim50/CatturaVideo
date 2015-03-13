@@ -1,0 +1,18 @@
+<div class="container" ng-controller="SearchDetailsCtrl">
+
+  <div class="table-top">
+
+    <p>
+    <h5>Details for Product Id: {{productId}}</h5>
+    </p>
+
+    <div ui-grid="{ data: details }" class="gridStyle"></div>
+
+    <!-- tt>{{details| json}}</tt><br/ -->
+
+    <form>
+      <INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+    </form>
+  </div>
+
+</div>

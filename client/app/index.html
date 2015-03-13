@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>CatturaVideo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+  <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/sidepanel.css">
+  <link rel="stylesheet" href="styles/gridstyle.css">
+  <!-- endbuild -->
+</head>
+<body ng-app="carsApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<navbar></navbar>
+<div class="container" ng-view=""></div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+<script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="src/app.js"></script>
+<!-- controllers -->
+<script src="src/cars/controllers/MainCtrl.js"></script>
+<script src="src/cars/controllers/SearchPanelCtrl.js"></script>
+<script src="src/cars/controllers/SearchResultsCtrl.js"></script>
+<script src="src/cars/controllers/SearchDetails.js"></script>
+<!-- services -->
+<script src="src/cars/services/DataService.js"></script>
+<script src="src/cars/services/CarService.js"></script>
+<!-- directives -->
+<script src="src/cars/directives/navbar.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<div class="container" ng-controller="SearchResultsCtrl">
+
+  <div class="table-top">
+
+    <div class="table-responsive">
+
+      <table ng-table="tableParams" class="table table-striped">
+
+        <tr ng-repeat="car in $data | filter:Data.Color | filter:Data.Make ">
+
+          <td>{{ $index + 1 }}</td>
+          <!-- td>{{ $id }}</td -->
+          <td>{{color}}</td>
+          <td data-title="'VIN'" sortable="'id'">
+            {{ car.id }}
+          </td>
+          <td data-title="'Make'" sortable="'name'">
+            {{ car.name }}
+          </td>
+          <td data-title="'Color'" sortable="'color'">
+            {{ car.color }}
+          </td>
+          <td data-title="'Location'" sortable="'location'">
+            {{ car.location }}
+          </td>
+        </tr>
+
+      </table>
+      <!--tt>{{data| json}}</tt><br/ -->
+    </div>
+  </div>
+
+
+</div>

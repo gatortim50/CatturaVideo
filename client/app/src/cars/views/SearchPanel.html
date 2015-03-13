@@ -1,0 +1,37 @@
+<div class="container" ng-controller="SearchPanelCtrl">
+
+  <ul class="sidebar-nav">
+    <li>
+      <a href="#/"></a>
+    </li>
+    <div>
+      <div>Select By Color: {{Data.Color}}</div>
+      <select ng-init="searchColor=''" ng-model="Data.Color">
+        <option value="">All</option>
+        <option value="Green">Green</option>
+        <option value="Orange">Orange</option>
+        <option value="Red">Red</option>
+      </select>
+    </div>
+
+    <div>
+      <div>Select By Make: {{Data.Make}}</div>
+      <select ng-init="searchMake=''" ng-model="Data.Make">
+        <option value="">All</option>
+        <option value="Ford">Ford</option>
+        <option value="Honda">Honda</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Chevrolet">Chevrolet</option>
+      </select>
+    </div>
+
+    </div>
+
+    <li>
+      <a href="#/"></a>
+    </li>
+  </ul>
+
+  <!-- tt>{{searchColor| json}}</tt><br/ -->
+
+</div>
