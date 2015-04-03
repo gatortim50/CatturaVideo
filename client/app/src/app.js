@@ -11,8 +11,6 @@ angular
     'ngTouch',
     'ngTable',
     'ui.grid',
-    //'confirmClick',
-    //'xeditable',
     'LocalStorageModule'
   ])
   .constant('MY_CONSTANTS', {

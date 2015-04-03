@@ -22,8 +22,8 @@ CatturaVideo test:
 5. Routing - /details/:id
 6. Shared service to communicate between sibling controllers
 7. Break up our application using html partials with ng-include
-
 ```
+
  Steps to Run Project (assumes you have nodejs installed)
 
 ```
